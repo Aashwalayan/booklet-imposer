@@ -4,7 +4,6 @@ def booklet_batches(start_page, end_page, batch_size=32):
 
     total_pages = end_page - start_page + 1
 
-    # Pad the final batch to a multiple of the batch size
     padded_total = (
         ((total_pages + batch_size - 1) // batch_size)
         * batch_size
